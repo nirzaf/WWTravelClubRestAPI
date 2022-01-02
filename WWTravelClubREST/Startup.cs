@@ -21,7 +21,7 @@ namespace WWTravelClubREST
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<WWTravelClubDB.MainDBContext>(options =>
+            services.AddDbContext<WWTravelClubDB.MainDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
                     b => b.MigrationsAssembly("WWTravelClubDB")));
             services.AddSwaggerGen(c =>

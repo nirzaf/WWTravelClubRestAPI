@@ -9,7 +9,7 @@ using WWTravelClubDB;
 
 namespace WWTravelClubDB.Migrations
 {
-    [DbContext(typeof(MainDBContext))]
+    [DbContext(typeof(MainDbContext))]
     [Migration("20190205102637_initial")]
     partial class initial
     {

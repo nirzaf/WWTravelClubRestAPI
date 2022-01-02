@@ -3,9 +3,9 @@ using WWTravelClubDB.Models;
 
 namespace WWTravelClubDB
 {
-    public class MainDBContext : DbContext
+    public class MainDbContext : DbContext
     {
-        public MainDBContext(DbContextOptions options)
+        public MainDbContext(DbContextOptions options)
             : base(options)
         {
         }

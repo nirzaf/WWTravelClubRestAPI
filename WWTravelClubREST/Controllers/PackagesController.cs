@@ -17,7 +17,7 @@ namespace WWTravelClubREST.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
         public async Task<IActionResult> GetPackagesByDate(
-            [FromServices] WWTravelClubDB.MainDBContext ctx,
+            [FromServices] WWTravelClubDB.MainDbContext ctx,
             DateTime start, DateTime stop)
         {
             try
